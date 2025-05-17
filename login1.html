@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formbox active" id="loginform">
+            <h2>Login</h2>
+            <input class="em" type="text" name="username" placeholder="Username" id="username" required>
+            <input class="ps" type="password" name="password" placeholder="password" id="password" required>
+            <button class="lbtn"  type="submit" name="login" id="login">Login</button>
+            <p>don't have an account <a href="#" onclick="showform('registerform');">Register</a></p>
+            <p class="para"></p>
+        </div>
+    </div>
+     <div class="container">
+        <div class="formbox" id="registerform">
+            <h2>Register</h2>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="password" name="password" placeholder="password" required>
+            <select name="role" id="">
+                <option value="">--select role--</option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button onclick="cl" type="submit" name="register">Login</button>
+            <p>already have an account <a href="#loginform" onclick="showform('loginform');">Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
